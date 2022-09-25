@@ -2,7 +2,7 @@ VERSION 5.00
 Object = "{F9043C88-F6F2-101A-A3C9-08002B2F49FB}#1.2#0"; "COMDLG32.OCX"
 Begin VB.Form Form1 
    Caption         =   "Setup.Lst修改器"
-   ClientHeight    =   5910
+   ClientHeight    =   4170
    ClientLeft      =   165
    ClientTop       =   735
    ClientWidth     =   4785
@@ -16,10 +16,17 @@ Begin VB.Form Form1
       Strikethrough   =   0   'False
    EndProperty
    LinkTopic       =   "Form1"
-   ScaleHeight     =   5910
+   ScaleHeight     =   4170
    ScaleWidth      =   4785
    ShowInTaskbar   =   0   'False
    StartUpPosition =   3  '窗口缺省
+   Begin VB.TextBox Text3 
+      Height          =   405
+      Left            =   1560
+      TabIndex        =   8
+      Top             =   2160
+      Width           =   1815
+   End
    Begin VB.TextBox Text2 
       Height          =   405
       Left            =   1560
@@ -38,8 +45,8 @@ Begin VB.Form Form1
    Begin VB.ComboBox Combo1 
       Height          =   315
       Left            =   1560
-      Style           =   2  'Dropdown List
       TabIndex        =   3
+      Text            =   "Combo1"
       Top             =   120
       Width           =   2535
    End
@@ -52,12 +59,22 @@ Begin VB.Form Form1
    End
    Begin MSComDlg.CommonDialog CommonDialog1 
       Left            =   3720
-      Top             =   4680
+      Top             =   1680
       _ExtentX        =   847
       _ExtentY        =   847
       _Version        =   393216
       FileName        =   "setup.lst"
       Filter          =   ".lst、"
+   End
+   Begin VB.Label Label4 
+      AutoSize        =   -1  'True
+      BackStyle       =   0  'Transparent
+      Caption         =   "默认安装目录"
+      Height          =   195
+      Left            =   360
+      TabIndex        =   7
+      Top             =   2280
+      Width           =   1080
    End
    Begin VB.Label Label3 
       AutoSize        =   -1  'True
@@ -119,35 +136,11 @@ Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
-Private Declare Function GetSystemDefaultLCID Lib "kernel32" () As Long '声明读取系统语言API
-Private Declare Function GetPrivateProfileString Lib "kernel32" Alias "GetPrivateProfileStringW" _
-           (ByVal lpApplicationName As Long, _
-            ByVal lpKeyName As Long, _
-            ByVal lpDefault As Long, _
-            ByVal lpReturnedString As Long, _
-            ByVal nSize As Long, _
-            ByVal lpFileName As Long) As Long
-Dim lstname As String
 Private Sub Command1_Click()
     CommonDialog1.ShowOpen
     lstname = CommonDialog1.FileName
+    Combo1.Text = lstname
+    Combo1.AddItem lstname
 End Sub
-'读INI文件
-Public Function GetValueFromINIFile(ByVal SectionName As String, _
-    ByVal KeyName As String, _
-    ByVal IniFileName As String) As String
 
-    Dim strBuf As String
-    '128个字符，初始化时用 0 填充
-    strBuf = String(128, 0)
 
-    GetPrivateProfileString StrPtr(SectionName), _
-        StrPtr(KeyName), _
-        StrPtr(""), _
-        StrPtr(strBuf), _
-        128, _
-        StrPtr(IniFileName)
-    '去除多余的 0
-    strBuf = Replace(strBuf, Chr(0), "")
-    GetValueFromINIFile = strBuf
-End Function
