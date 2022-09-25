@@ -1,19 +1,41 @@
 VERSION 5.00
+Object = "{803953EC-0747-11D4-AC0B-00E07D76E465}#1.0#0"; "URLLabel Ctrl.ocx"
 Begin VB.Form frmAbout 
    BorderStyle     =   3  'Fixed Dialog
    Caption         =   "关于我的应用程序"
-   ClientHeight    =   3555
+   ClientHeight    =   4260
    ClientLeft      =   2340
    ClientTop       =   1935
-   ClientWidth     =   5730
+   ClientWidth     =   6405
    ClipControls    =   0   'False
    LinkTopic       =   "Form2"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   2453.724
+   ScaleHeight     =   2940.328
    ScaleMode       =   0  'User
-   ScaleWidth      =   5380.766
+   ScaleWidth      =   6014.626
    ShowInTaskbar   =   0   'False
+   Begin URLLabelCtl.URLLabel URLLabel1 
+      Height          =   255
+      Left            =   1920
+      TabIndex        =   6
+      Top             =   1680
+      Width           =   4215
+      _ExtentX        =   7435
+      _ExtentY        =   450
+      ForeColor       =   8388608
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "宋体"
+         Size            =   9
+         Charset         =   134
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      BackStyle       =   1
+      Caption         =   "https://github.com/QiBowen2008/Setup.lst-reader/"
+   End
    Begin VB.CommandButton cmdOK 
       Cancel          =   -1  'True
       Caption         =   "确定"
@@ -21,7 +43,7 @@ Begin VB.Form frmAbout
       Height          =   345
       Left            =   4125
       TabIndex        =   0
-      Top             =   2625
+      Top             =   3225
       Width           =   1500
    End
    Begin VB.CommandButton cmdSysInfo 
@@ -29,23 +51,52 @@ Begin VB.Form frmAbout
       Height          =   345
       Left            =   4140
       TabIndex        =   1
-      Top             =   3075
+      Top             =   3675
       Width           =   1485
+   End
+   Begin VB.Label Label2 
+      AutoSize        =   -1  'True
+      BackStyle       =   0  'Transparent
+      Caption         =   "助力开发："
+      Height          =   180
+      Left            =   840
+      TabIndex        =   5
+      Top             =   1680
+      Width           =   900
+   End
+   Begin VB.Label Label1 
+      AutoSize        =   -1  'True
+      BackStyle       =   0  'Transparent
+      Caption         =   "开发者邮箱：qibowen7852008@qq.com"
+      Height          =   225
+      Left            =   840
+      TabIndex        =   4
+      Top             =   1320
+      Width           =   3885
    End
    Begin VB.Line Line1 
       BorderColor     =   &H00808080&
       BorderStyle     =   6  'Inside Solid
       Index           =   1
-      X1              =   84.515
-      X2              =   5309.398
-      Y1              =   1687.583
-      Y2              =   1687.583
+      X1              =   112.686
+      X2              =   5337.57
+      Y1              =   2070.653
+      Y2              =   2070.653
    End
    Begin VB.Label lblTitle 
       Caption         =   "Setup.Lst编辑器"
+      BeginProperty Font 
+         Name            =   "宋体"
+         Size            =   12
+         Charset         =   134
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
       ForeColor       =   &H00000000&
       Height          =   480
-      Left            =   1050
+      Left            =   840
       TabIndex        =   2
       Top             =   240
       Width           =   3885
@@ -54,15 +105,15 @@ Begin VB.Form frmAbout
       BorderColor     =   &H00FFFFFF&
       BorderWidth     =   2
       Index           =   0
-      X1              =   98.6
-      X2              =   5309.398
-      Y1              =   1697.936
-      Y2              =   1697.936
+      X1              =   225.372
+      X2              =   5436.17
+      Y1              =   2070.653
+      Y2              =   2070.653
    End
    Begin VB.Label lblVersion 
       Caption         =   "版本1.0"
       Height          =   225
-      Left            =   1050
+      Left            =   840
       TabIndex        =   3
       Top             =   780
       Width           =   3885
@@ -200,3 +251,7 @@ GetKeyError:      ' 错误发生后将其清除...
     GetKeyValue = False                                     ' 返回失败
     rc = RegCloseKey(hKey)                                  ' 关闭注册表关键字
 End Function
+
+Private Sub Label2_Click()
+
+End Sub

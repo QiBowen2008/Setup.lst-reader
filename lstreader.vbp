@@ -5,6 +5,7 @@ Object={F9043C88-F6F2-101A-A3C9-08002B2F49FB}#1.2#0; COMDLG32.OCX
 Form=frmAbout.frm
 Form=frmSet.frm
 Module=Module1; Module1.bas
+Object={803953EC-0747-11D4-AC0B-00E07D76E465}#1.0#0; URLLabel Ctrl.ocx
 IconForm="Form1"
 Startup="Form1"
 HelpFile=""

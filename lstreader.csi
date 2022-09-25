@@ -1,8 +1,7 @@
 [ÀúÊ·]
-1=#P0#=mb	#P1#=GetINI	#P2#=Setuplst±à¼­Æ÷/Module1/GetINI	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20220925133707	#P7#=0	#P8#=0	.
-2=#P0#=mb	#P1#=WriteINI	#P2#=Setuplst±à¼­Æ÷/Module1/WriteINI	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20220925133636	#P7#=0	#P8#=1	.
-3=#P0#=mb	#P1#=STRYMINI	#P2#=Setuplst±à¼­Æ÷/Module1/STRYMINI	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20220925133539	#P7#=0	#P8#=0	.
-4=#P0#=mb	#P1#=GetINIFile	#P2#=Setuplst±à¼­Æ÷/Module1/GetINIFile	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20220925133512	#P7#=0	#P8#=0	.
-5=#P0#=mb	#P1#=GetValueFromINIFile	#P2#=Setuplst±à¼­Æ÷/Module1/GetValueFromINIFile	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20220925133510	#P7#=0	#P8#=0	.
-6=#P0#=mb	#P1#=Command1_Click	#P2#=Setuplst±à¼­Æ÷/Form1/Command1_Click	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20220925133759	#P7#=-2147483640	#P8#=3	.
-7=#P0#=mb	#P1#=lstname	#P2#=Setuplst±à¼­Æ÷/Form1/lstname	#P3#=	#P4#=	#P5#=MembVariablePrivate	#P6#=20220924221838	#P7#=-2147483640	#P8#=0	.
+1=#P0#=mb	#P1#=About_Click	#P2#=Setuplst±à¼­Æ÷/Form1/About_Click	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20220925183011	#P7#=0	#P8#=1	.
+2=#P0#=mb	#P1#=Command2_Click	#P2#=Setuplst±à¼­Æ÷/Form1/Command2_Click	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20220925181840	#P7#=0	#P8#=-2	.
+3=#P0#=mb	#P1#=Form_Load	#P2#=Setuplst±à¼­Æ÷/Form1/Form_Load	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20220925140038	#P7#=0	#P8#=1	.
+4=#P0#=mb	#P1#=Command1_Click	#P2#=Setuplst±à¼­Æ÷/Form1/Command1_Click	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20220925182923	#P7#=-2147483640	#P8#=0	.
+5=#P0#=mb	#P1#=GetINI	#P2#=Setuplst±à¼­Æ÷/Module1/GetINI	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20220925180521	#P7#=0	#P8#=5	.
+6=#P0#=mb	#P1#=WriteINI	#P2#=Setuplst±à¼­Æ÷/Module1/WriteINI	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20220925180506	#P7#=0	#P8#=1	.
